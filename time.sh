@@ -8,6 +8,8 @@ read -r minutes && printf -v minutes0 '%i' $minutes
 
 declare -i hours=0
 
+# read -p "Display days? (y/n): " r_days
+
 if [[ $(($minutes - 60)) -ge 0 ]]
 then
 	while (( $minutes - 60 >= 0 ))
@@ -20,3 +22,5 @@ then
 else
 	printf "\n\t$hours"; printf "h "; printf "$minutes" ;printf "m\n"
 fi
+
+# TODO: Check if user entered int
