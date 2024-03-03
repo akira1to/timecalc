@@ -15,14 +15,8 @@ then
 		hours=$hours+1
 		minutes=$(($minutes - 60))	
 	done
-
-	printf "\n$hours"
-	printf "h "
-	printf "$minutes"
-	printf "m\n"
+	
+	printf "\n\t$hours"; printf "h "; printf "$minutes" ;printf "m\n"
 else
-	printf "\n$hours"
-	printf "h "
-	printf "$minutes"
-	printf "m\n"
+	printf "\n\t$hours"; printf "h "; printf "$minutes" ;printf "m\n"
 fi
